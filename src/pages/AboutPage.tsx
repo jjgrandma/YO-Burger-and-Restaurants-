@@ -47,7 +47,7 @@ export default function AboutPage() {
                 controls
                 style={{ maxHeight: '480px' }}
               >
-                <source src="/src/public/assets/our-story.mp4" type="video/mp4" />
+                <source src="/assets/ourStory.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
