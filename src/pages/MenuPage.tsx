@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
 import ScrollReveal from '../components/ScrollReveal';
 import { useLanguage } from '../i18n/LanguageContext';
-
 import boomImg from '../public/assets/boom.jpg';
+import menuHeroImg from '../public/assets/menu.jpg';
 
 interface MenuItem {
   name: string;
@@ -80,7 +80,7 @@ export default function MenuPage() {
     <div className="min-h-screen bg-gray-950 pt-14 md:pt-[62px] pb-12">
       {/* Hero Section */}
       <div className="relative bg-cover bg-center py-16 md:py-20 px-4" style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1600&q=85)',
+        backgroundImage: `url(${menuHeroImg})`,
       }}>
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
