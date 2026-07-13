@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import boomImg from '../public/assets/boom.jpg';
-import pizzaImg from '../public/assets/pizaa4.jpg';
+
+// Beautiful high-res food images from Unsplash — landscape, hero-optimized
+const slide1Img = 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=90'; // juicy burger
+const slide2Img = 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&q=90'; // pizza
+const slide3Img = 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=1920&q=90'; // cheeseburger
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -10,21 +13,24 @@ export default function HeroSection() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const heroSlides = [
     {
-      image: boomImg,
+      image: slide1Img,
+      objectPosition: 'center 60%',
       subtitle: t('hero.welcome'),
       title: t('hero.title1'),
       highlight: t('hero.highlight1'),
       description: t('hero.desc1'),
     },
     {
-      image: pizzaImg,
+      image: slide2Img,
+      objectPosition: 'center center',
       subtitle: t('hero.premium'),
       title: t('hero.title2'),
       highlight: t('hero.highlight2'),
       description: t('hero.desc2'),
     },
     {
-      image: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=1600&q=85',
+      image: slide3Img,
+      objectPosition: 'center 55%',
       subtitle: t('hero.crafted'),
       title: t('hero.title3'),
       highlight: t('hero.highlight3'),
@@ -63,11 +69,12 @@ export default function HeroSection() {
           key={slide.image}
           src={slide.image}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center scale-110"
+          className="absolute inset-0 w-full h-full object-cover scale-110"
+          style={{ objectPosition: slide.objectPosition }}
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950/50 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
