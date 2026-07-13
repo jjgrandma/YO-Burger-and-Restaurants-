@@ -1,5 +1,8 @@
 import ScrollReveal from '../components/ScrollReveal';
 import { useLanguage } from '../i18n/LanguageContext';
+import innerViewImg from '../public/assets/inner view.jpg';
+import viewImg from '../public/assets/view.jpg';
+import outsideViewImg from '../public/assets/outsideview.jpg';
 
 const teamMembers = [
   { name: 'Yohannes Alemu', role: 'Master Chef', image: 'https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&q=80' },
@@ -10,9 +13,9 @@ const teamMembers = [
 const galleryImages = [
   'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
   'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80',
-  'https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=600&q=80',
-  'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+  innerViewImg,
+  viewImg,
+  outsideViewImg,
   'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80',
 ];
 
@@ -47,7 +50,7 @@ export default function AboutPage() {
                 controls
                 style={{ maxHeight: '480px' }}
               >
-                <source src="/assets/ourStory.mp4" type="video/mp4" />
+                <source src="/assets/yovideo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
