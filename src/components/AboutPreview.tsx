@@ -1,25 +1,24 @@
 import { Link } from 'react-router-dom';
 import ScrollReveal from './ScrollReveal';
 import { useLanguage } from '../i18n/LanguageContext';
-import fegetaBurgerImg from '../public/assets/fegeta burger.jpg';
-import fegegtaImg from '../public/assets/fegegta.jpg';
-import menu5Img from '../public/assets/menu5.jpg';
+import viewImg from '../public/assets/view.jpg';
+import innerViewImg from '../public/assets/inner view.jpg';
 
 const aboutImages = [
   {
-    src: fegetaBurgerImg,
-    alt: 'Restaurant interior',
+    src: viewImg,
+    alt: 'Restaurant exterior view',
     span: 'col-span-2 md:col-span-1',
     height: 'h-48 md:h-72',
   },
   {
-    src: fegegtaImg,
-    alt: 'Chef preparing food',
+    src: innerViewImg,
+    alt: 'Restaurant interior view',
     span: '',
     height: 'h-48 md:h-72',
   },
   {
-    src: menu5Img,
+    src: viewImg,
     alt: 'Restaurant ambiance',
     span: '',
     height: 'h-48 md:h-60',
