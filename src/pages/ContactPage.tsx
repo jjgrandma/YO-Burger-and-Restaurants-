@@ -98,7 +98,14 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-white font-bold text-base md:text-lg uppercase tracking-wider">{t('contact.find')}</h3>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed ml-16">{t('common.adamaAddress')}</p>
+                <a
+                  href="https://maps.google.com/?q=G7WC%2BGJG+Adama+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 hover:text-red-400 text-sm md:text-base leading-relaxed ml-16 transition-colors underline underline-offset-2"
+                >
+                  {t('common.adamaAddress')}
+                </a>
               </div>
             </div>
           </div>

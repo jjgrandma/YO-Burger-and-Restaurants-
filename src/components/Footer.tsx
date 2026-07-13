@@ -71,7 +71,14 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">{t('footer.address')}</p>
-                <p className="text-gray-300 text-sm">{t('common.adamaAddress')}</p>
+                <a
+                  href="https://maps.google.com/?q=G7WC%2BGJG+Adama+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 text-sm transition-colors underline underline-offset-2"
+                >
+                  {t('common.adamaAddress')}
+                </a>
               </div>
             </div>
           </div>

@@ -247,7 +247,14 @@ export default function ReservationPage() {
                   </div>
                   <h3 className="text-white font-bold text-sm uppercase tracking-wider">{t('reservation.location')}</h3>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed ml-[52px]">{t('common.adamaAddress')}</p>
+                <a
+                  href="https://maps.google.com/?q=G7WC%2BGJG+Adama+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 hover:text-red-400 text-sm md:text-base leading-relaxed ml-[52px] transition-colors underline underline-offset-2"
+                >
+                  {t('common.adamaAddress')}
+                </a>
               </div>
 
               {/* Lunch Hours */}
